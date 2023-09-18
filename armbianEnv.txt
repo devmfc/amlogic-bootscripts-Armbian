@@ -1,0 +1,17 @@
+extraargs=earlycon rootflags=data=writeback rw no_console_suspend consoleblank=0 fsck.fix=yes fsck.repair=yes net.ifnames=0
+bootlogo=false
+verbosity=7
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
+console=both
+
+# DTB file for this tvbox
+# fdtfile=amlogic/meson-gxl-s905x-nexbox-a95x.dtb
+fdtfile=amlogic/meson-sm1-x96-air-gbit.dtb
+
+# set this to the UUID of the root partition (value can be found in /extlinux/extlinux.conf after APPEND root= or with blkid)
+rootdev=UUID=92139c84-3871-41d7-a3f2-e8a943cbfa87
+
+# Enable ONLY for gxbb (S905) / gxl (S905X/L/W) to create fake u-boot header
+#soc_fixup=gxl-
+
+
