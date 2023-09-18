@@ -97,4 +97,4 @@ echo "Starting kernel with cmdline: ${bootargs}"
 run cmd_do_boot
 
 # Recompile with:
-# mkimage -C none -A arm -T script -d s905_autoscript.cmd s905_autoscript
+# mkimage -C none -A arm -T script -d s905_autoscript.command s905_autoscript

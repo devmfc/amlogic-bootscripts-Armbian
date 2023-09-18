@@ -7,7 +7,8 @@ setenv start_usb_autoscript 'for usbdev in 0 1 2 3; do if fatload usb ${usbdev} 
 setenv upgrade_step 2
 saveenv
 sleep 1
-reboot
+
+run bootcmd
 
 # Recompile with:
-# mkimage -C none -A arm -T script -d aml_autoscript.cmd aml_autoscript
+# mkimage -C none -A arm -T script -d aml_autoscript.command aml_autoscript

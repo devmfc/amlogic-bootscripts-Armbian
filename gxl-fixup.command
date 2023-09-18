@@ -3,7 +3,7 @@
 #  boot hack, vendor bootloader can only boot legacy u-boot image files
 #  so hack image header together (I don't want separate uImage files), kernel image should NOT exceed 32MB 
 #	generate a new u-boot header via:
-#	mkimage -C none -A arm -T script -d gxl-fixup.cmd gxl-fixup.scr
+#	mkimage -C none -A arm -T script -d gxl-fixup.command gxl-fixup.scr
 
 setenv verify no       
 setenv cmd_hdr_create 'mw.l 0x1ffffc0 0 0x10;mw.l 0x1ffffc0 0x56190527;mw.l 0x1ffffcc 0x00000002;mw.l 0x1ffffd0 0x00000002;mw.l 0x1ffffd4 0x00000002;mw.l 0x1ffffdc 0x00021605;'
