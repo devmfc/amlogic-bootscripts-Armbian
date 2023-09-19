@@ -10,7 +10,7 @@ assumption: you have vendor u-boot (the one that came with the box) running on e
 
 + **Step 1:** Download latest Armbian for s9xxx-box, let's use [bookworm minimal](https://dl.armbian.com/aml-s9xx-box/archive/Armbian_23.8.1_Aml-s9xx-box_bookworm_current_6.1.50_minimal.img.xz)  
 + **Step 2:** Burn the image to a USB flash drive  
-+ **Step 3:** Copy the modified boot scripts (**[aml_autoscript](https://github.com/devmfc/amlogic-bootscripts-Armbian/blob/main/aml_autoscript)**, **[s905_autoscript](https://github.com/devmfc/amlogic-bootscripts-Armbian/blob/main/s905_autoscript)** to the fat partition on the USB drive. Overwrite the existing files.  
++ **Step 3:** Copy the modified boot scripts (**[aml_autoscript](https://github.com/devmfc/amlogic-bootscripts-Armbian/blob/main/aml_autoscript)**, **[s905_autoscript](https://github.com/devmfc/amlogic-bootscripts-Armbian/blob/main/s905_autoscript)** ) to the fat partition on the USB drive. Overwrite the existing files.  
 + **Step 4:** If you have a GXBB (S905) or GXL (S905X/W/L) soc, you also need **[gxl-fixup.scr](https://github.com/devmfc/amlogic-bootscripts-Armbian/blob/main/gxl-fixup.scr)**  
 + **Step 5:** Add an armbianEnv.txt file with the following content (file is also on github):  
 ```bash
