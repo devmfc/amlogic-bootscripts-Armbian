@@ -24,18 +24,7 @@ setenv bootlogo "false"
 setenv rootfstype "ext4"
 setenv docker_optimizations "on"
 
-setenv display_autodetect "true"
-setenv hdmimode "1080p60hz"
-setenv monitor_onoff "false"
-setenv overscan "100"
-setenv sdrmode "auto"
-setenv voutmode "hdmi"
-setenv disablehpd "false"
-setenv cec "false"
 setenv disable_vu7 "true"
-setenv max_freq_a55 "1908"
-#setenv max_freq_a55 "2100"
-setenv maxcpus "4"
 
 if test -e ${devtype} ${devnum} ${prefix}armbianEnv.txt; then
 	fatload ${devtype} ${devnum} ${scriptaddr} ${prefix}armbianEnv.txt
