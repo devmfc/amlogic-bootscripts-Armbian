@@ -11,6 +11,7 @@ test "${devnum}" = "" && setenv devnum 0
 setenv scriptaddr "0x01080000"
 setenv kernel_addr_r "0x02000000"
 setenv fdt_addr_r "0x04000000"
+setenv dtb_mem_addr "0x04000000"
 setenv initrd_loadaddr "0x13000000"
 setenv cmd_do_boot booti ${kernel_addr_r} ${initrd_loadaddr} ${fdt_addr_r}
 
