@@ -32,7 +32,7 @@ rootdev=UUID=92139c84-3871-41d7-a3f2-e8a943cbfa87
 #soc_fixup=gxl-
 ```
 + **Step 6:** Change *fdtfile* to the DTB for your box.  
-+ **Step 7:** Change *rootdev* to the right UUID for the rootfs for your image or change to /dev/sda2 when booting from USB or /dev/mmcblk0p2 when booting from SDCARD  
++ **Step 7:** (optional since version 3:) Change *rootdev* to the right UUID for the rootfs for your image or change to /dev/sda2 when booting from USB or /dev/mmcblk0p2 when booting from SDCARD  
 + **Step 8:** Only if your box has a GXBB (S905) or GXL (S905X/W/L) soc, uncomment the line *soc_fixup=gxl-*  
 + **Step 9:** Power off the the box.  
 + **Step 10:** Put the USB disk in your box.  
