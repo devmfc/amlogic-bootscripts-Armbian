@@ -8,7 +8,7 @@ All it takes are some simple modifications of some of the Armbian u-boot scripts
 # Setup
 assumption: you have vendor u-boot (the one that came with the box) running on eMMC. If you don't, you can just restore the stock Android image with Amlogic USB Burning tool.
 
-+ **Step 1:** Download latest Armbian for s9xxx-box, let's use [bookworm minimal](https://dl.armbian.com/aml-s9xx-box/archive/Armbian_23.8.1_Aml-s9xx-box_bookworm_current_6.1.50_minimal.img.xz)  
++ **Step 1:** Download latest Armbian for s9xxx-box, let's use [bookworm minimal](https://github.com/armbian/community/releases/download/24.5.0-trunk.152/Armbian_community_24.5.0-trunk.152_Aml-s9xx-box_bookworm_current_6.6.21_minimal.img.xz)  
 + **Step 2:** Burn the image to a USB flash drive  
 + **Step 3:** Copy the modified boot scripts (**[aml_autoscript](https://github.com/devmfc/amlogic-bootscripts-Armbian/blob/main/aml_autoscript)**, **[s905_autoscript](https://github.com/devmfc/amlogic-bootscripts-Armbian/blob/main/s905_autoscript)** ) to the fat partition on the USB drive. Overwrite the existing files.  
 + **Step 4:** If you have a GXBB (S905) or GXL (S905X/W/L) soc, you also need **[gxl-fixup.scr](https://github.com/devmfc/amlogic-bootscripts-Armbian/blob/main/gxl-fixup.scr)**  
