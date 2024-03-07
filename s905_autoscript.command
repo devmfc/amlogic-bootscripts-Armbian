@@ -17,7 +17,7 @@ setenv cmd_do_boot booti ${kernel_addr_r} ${initrd_loadaddr} ${fdt_addr_r}
 
 setenv overlay_error "false"
 # default values
-setenv rootdev "/dev/mmcblk1p1"
+setenv rootdev "LABEL=armbi_root"
 setenv verbosity "1"
 setenv console "both"
 setenv bootlogo "false"
